@@ -6,6 +6,8 @@ const app = express();
 
 const weather = require("./weather-route");
 
+require("./cors")(app);
+
 //route
 
 app.use(express.json());
